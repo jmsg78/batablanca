@@ -1,0 +1,62 @@
+$color_background: #f0f0f7;
+$color_main: #ffffff;
+$color_contrast: #3b86ff;
+$color_black: #232323;
+$color_gray: #4d4f5c;
+$color_yellow: #ffc06a;
+$color_cian: #56d9fe;
+$color_purple: #a3a0fb;
+$color_green: #4ad991;
+$color_red: #ff8474;
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: $color_background;
+}
+
+.navbar {
+  color: $color_contrast;
+  background-color: $color_main;
+}
+
+.filter__container {
+  background-color: $color_main;
+  h4 {
+    font-size: 18px;
+  }
+}
+
+.results__container {
+  background-color: $color_main;
+  overflow-y: auto;
+  max-height: 75vh;
+  h2 {
+    font-size: 23px;
+    font-weight: 100px;
+  }
+}
+
+
+.results__container--card:hover {
+  background: radial-gradient(
+    circle at 0% 50%,
+    $color_main,
+    $color_main,
+    $color_contrast
+  );
+  cursor: pointer;
+}
+
+.results__checkout {
+  background-color: $color_main;
+  border-left: solid $color_background 1em;
+}
+
+.footer {
+  color: white;
+  background-color: $color_gray;
+
+  .footer__copyright {
+    background-color: $color_black;
+  }
+}

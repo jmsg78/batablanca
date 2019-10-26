@@ -1,0 +1,46 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f0f0f7;
+}
+
+.navbar {
+  color: #3b86ff;
+  background-color: #ffffff;
+}
+
+.filter__container {
+  background-color: #ffffff;
+}
+.filter__container h4 {
+  font-size: 18px;
+}
+
+.results__container {
+  background-color: #ffffff;
+  overflow-y: auto;
+  max-height: 75vh;
+}
+.results__container h2 {
+  font-size: 23px;
+  font-weight: 100px;
+}
+
+.results__container--card:hover {
+  background: radial-gradient(circle at 0% 50%, #ffffff, #ffffff, #3b86ff);
+  cursor: pointer;
+}
+
+.results__checkout {
+  background-color: #ffffff;
+  border-left: solid #f0f0f7 1em;
+}
+
+.footer {
+  color: white;
+  background-color: #4d4f5c;
+}
+.footer .footer__copyright {
+  background-color: #232323;
+}
+
+/*# sourceMappingURL=searchResults.css.map */
