@@ -1,0 +1,30 @@
+$color_background: #f0f0f7;
+$color_main: #ffffff;
+$color_contrast: #3b86ff;
+$color_black: #232323;
+$color_gray: #4d4f5c;
+$color_yellow: #ffc06a;
+$color_cian: #56d9fe;
+$color_purple: #a3a0fb;
+$color_green: #4ad991;
+$color_red: #ff8474;
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: $color_background;
+}
+.navbar {
+  color: $color_contrast;
+  background-color: $color_main;
+}
+.main {
+  background-color: $color_main;
+}
+.footer {
+  color: white;
+  background-color: $color_gray;
+
+  .footer__copyright {
+    background-color: $color_black;
+  }
+}

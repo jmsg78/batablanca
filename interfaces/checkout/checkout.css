@@ -1,0 +1,23 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f0f0f7;
+}
+
+.navbar {
+  color: #3b86ff;
+  background-color: #ffffff;
+}
+
+.main {
+  background-color: #ffffff;
+}
+
+.footer {
+  color: white;
+  background-color: #4d4f5c;
+}
+.footer .footer__copyright {
+  background-color: #232323;
+}
+
+/*# sourceMappingURL=checkout.css.map */
