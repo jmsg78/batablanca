@@ -1,0 +1,58 @@
+$colorBackground: green;
+$colorContainer: white;
+$color_contrast: #3B86FF;
+
+body{
+    background-image: url("../../../../assets/bgCare.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+   
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.container {
+    width: 25vw;
+    background-color: $colorContainer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    border-radius: 1rem;
+
+}
+.container_col--row {
+    width: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container_col--results {
+    p {
+        font-size: 2rem;
+    }
+
+}
+
+.container_wrapper{
+display: flex;
+justify-content: center;
+}
+
+.container_wrapper--button {
+    background-color: $color_contrast;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+
+  }
+
+ 

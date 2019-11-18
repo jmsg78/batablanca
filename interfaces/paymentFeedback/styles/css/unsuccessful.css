@@ -1,0 +1,38 @@
+body {
+  background-image: url("../../../../assets/bgCare.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.container {
+  width: 25vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  border-radius: 1rem;
+}
+
+.container_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.container_wrapper--button {
+  background-color: #3B86FF;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=unsuccessful.css.map */
