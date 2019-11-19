@@ -1,0 +1,94 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f0f0f7;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f7;
+  justify-content: space-around;
+}
+
+.main__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__container-companyDetails {
+  align-self: flex-end;
+}
+
+.main__container-invoiceDetails {
+  align-self: flex-start;
+}
+
+.main-invoiceDetail__table {
+  display: table;
+}
+
+.column1 {
+  width: 260px;
+  padding-left: 40px;
+}
+
+.column2 {
+  width: 160px;
+}
+
+.column3 {
+  width: 245px;
+}
+
+.column4 {
+  width: 110px;
+  text-align: right;
+}
+
+.column5 {
+  width: 170px;
+  text-align: right;
+}
+
+.column6 {
+  width: 222px;
+  text-align: right;
+  padding-right: 62px;
+}
+
+.btAccept {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3b86ff;
+}
+
+.btCancel {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ff8474;
+}
+
+/*# sourceMappingURL=checkout.css.map */

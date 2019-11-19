@@ -1,0 +1,103 @@
+$color_background: #f0f0f7;
+$color_main: #ffffff;
+$color_contrast: #3b86ff;
+$color_black: #232323;
+$color_gray: #4d4f5c;
+$color_yellow: #ffc06a;
+$color_cian: #56d9fe;
+$color_purple: #a3a0fb;
+$color_green: #4ad991;
+$color_red: #ff8474;
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: $color_background;
+}
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin button{
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px; 
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor:pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  @include flex;  
+  width: 100vw;
+  height: 100vh;
+  background-color: $color_background;
+  justify-content: space-around;
+  
+}
+
+.main__container {
+  @include flex;
+  flex-direction: column;
+}
+
+.main__container-companyDetails {
+  align-self: flex-end;
+}
+
+.main__container-invoiceDetails {
+  align-self: flex-start;
+}
+
+.main-invoiceDetail__table {
+  display: table;
+}
+
+.column1 {
+  width: 260px;
+  padding-left: 40px;
+}
+
+.column2 {
+  width: 160px;
+}
+
+.column3 {
+  width: 245px;
+}
+
+.column4 {
+  width: 110px;
+  text-align: right;
+}
+
+.column5 {
+  width: 170px;
+  text-align: right;
+}
+
+.column6 {
+  width: 222px;
+  text-align: right;
+  padding-right: 62px;
+}
+
+.btAccept{
+  @include button;
+  background-color: $color_contrast;
+}
+.btCancel{
+  @include button;
+  background-color: $color_red;
+}
+
