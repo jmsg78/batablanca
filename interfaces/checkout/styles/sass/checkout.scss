@@ -3,30 +3,39 @@ $color_main: #ffffff;
 $color_contrast: #3b86ff;
 $color_black: #232323;
 $color_gray: #4d4f5c;
+$color_lightgray: #f0f0f7;
+
 $color_yellow: #ffc06a;
 $color_cian: #56d9fe;
 $color_purple: #a3a0fb;
 $color_green: #4ad991;
 $color_red: #ff8474;
 
-body {
-  font-family: "Source Sans Pro", sans-serif;
-  background-color: $color_background;
-}
 @mixin flex {
   display: flex;
   align-items: center;
 }
 
-@mixin button{
+@mixin button {
   border: none;
   border-radius: 5px;
-  color: white;
-  padding: 15px 32px; 
+  color: $color_main;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  cursor:pointer;
+  cursor: pointer;
+}
+body {
+  @include flex;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: $color_background;
+  margin: 0;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  height: 100vh;
 }
 
 li {
@@ -37,13 +46,33 @@ a {
   text-decoration: none;
 }
 
+.header__navbar {
+  @include flex;
+  background-color: $color-main;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.header__navbar-brand {
+  color: $color_black;
+  font-size: 3em;
+}
+
+.header-ulist__item a {
+  color: $color_black;
+  font-size: 1.2em;
+}
+
 .main {
-  @include flex;  
-  width: 100vw;
-  height: 100vh;
-  background-color: $color_background;
-  justify-content: space-around;
-  
+  @include flex;
+  width: 100%;
+  background-color: $color_main;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+  height: 100%;
+
+  font-size: 1.4em;
 }
 
 .main__container {
@@ -52,52 +81,70 @@ a {
 }
 
 .main__container-companyDetails {
+  @include flex;
   align-self: flex-end;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .main__container-invoiceDetails {
-  align-self: flex-start;
+  @include flex;
+  align-self: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .main-invoiceDetail__table {
-  display: table;
+  border-collapse: collapse;
+  margin-bottom: 5em;
+  min-width: 80vw;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.15);
 }
 
-.column1 {
-  width: 260px;
-  padding-left: 40px;
+.main-invoiceDetail__table thead tr {
+  font-weight: bold;
+  color: $color_black;
+  text-align: left;
+  border: 1.5px solid $color_lightgray;
 }
 
-.column2 {
-  width: 160px;
+.main-invoiceDetail__table th,
+.main-invoiceDetail__table td {
+  padding: 12px 15px;
 }
 
-.column3 {
-  width: 245px;
+.main-invoiceDetail__table tbody tr {
+  border-bottom: 2px solid $color_lightgray;
 }
 
-.column4 {
-  width: 110px;
-  text-align: right;
-}
-
-.column5 {
-  width: 170px;
-  text-align: right;
-}
-
-.column6 {
-  width: 222px;
-  text-align: right;
-  padding-right: 62px;
-}
-
-.btAccept{
+.btAccept {
   @include button;
   background-color: $color_contrast;
 }
-.btCancel{
+.btCancel {
   @include button;
   background-color: $color_red;
 }
 
+.footer {
+  @include flex;
+  width: 100%;
+  bottom: 0;
+  height: 3rem;
+  background-color: $color_black;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+}
+.footer a{
+  text-decoration: none;
+  color: $color_green;
+}
+.footer a:visited {
+  text-decoration: none;
+  color: $color_purple;
+}
+
+.footer a:hover, a:active { text-decoration: none; color:$color_red }
